@@ -1,6 +1,7 @@
 <div class="new-question-form">
     {{input type="text" placeholder="Your name" value=name class="name-input"}}
-    {{input type="text" placeholder="Your question..." value=body class="body-input"}}
+    {{input type="text" placeholder="Your question" value=title class="title-input"}}
+    {{input type="text" placeholder="Question description..." value=body class="body-input"}}
     {{input type="date" placeholder="date" value=date class="date-input"}}
 
     <button {{action 'addQuestion'}} class="submit">Add question</button>
