@@ -4,6 +4,6 @@
 
 {{#each question in model}}
   <div class="each-question">
-    {{#link-to 'question' question.id}}{{question.body}}{{/link-to}} <span class="muted">by {{question.name}} {{question.date}}</span>
+    {{#link-to 'question' question.id}}{{question.title}}{{/link-to}} <span class="muted">by {{question.name}} {{question.date}}</span>
   </div>
 {{/each}}
