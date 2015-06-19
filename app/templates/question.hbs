@@ -25,3 +25,13 @@
 <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
 
 {{/if}}
+
+<li>{{#link-to 'answer'}}Add a answer{{/link-to}}</li>
+    {{outlet}}
+
+    {{#each answer in model.answers}}
+      <ul>
+        <li>{{answer.body}}</li>
+        <span class="muted"> {{answer.name}}, {{answer.date}} </span>
+      </ul>
+    {{/each}}

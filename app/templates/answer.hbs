@@ -1,0 +1,7 @@
+<div class="answer-form">
+    {{input type="text" placeholder="Your name" value=name class="name-input"}}
+    {{textarea type="text" placeholder="Your answer" id="body" value=body class="body-input" rows="4"}}
+    {{input type="date" placeholder="date" value=date class="date-input"}}
+
+    <button {{action 'addAnswer'}} class="submit">Add answer</button>
+</div>
