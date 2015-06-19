@@ -3,5 +3,7 @@
 {{outlet}}
 
 {{#each question in model}}
-  <div class="each-question">{{question.name}} {{question.body}} {{question.date}}</div>
+  <div class="each-question">
+    {{#link-to 'question' question.id}}{{question.body}}{{/link-to}} <span class="muted">by {{question.name}} {{question.date}}</span>
+  </div>
 {{/each}}

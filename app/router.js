@@ -10,6 +10,7 @@ Router.map(function() {
   this.resource('questions', {path: '/'}, function(){
     this.route('new');
   });
+  this.resource('question', {path: '/questions/:question_id'})
 });
 
 export default Router;
