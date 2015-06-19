@@ -1,3 +1,7 @@
 <h1>questions page lol</h1>
 
 {{outlet}}
+
+{{#each question in model}}
+  <div class="each-question">{{question.name}} {{question.body}} {{question.date}}</div>
+{{/each}}
