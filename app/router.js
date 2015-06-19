@@ -6,12 +6,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('about');
-  this.resource('questions', {path: '/'}, function(){
-    this.route('new');
+    this.route('about');
+    this.resource('questions', {path: '/'}, function(){
   });
-  this.resource('question', {path: '/questions/:question_id'}, function(){
-    this.resource('answer');
+    this.route('new');
+    this.resource('question', {path: '/questions/:question_id'}, function(){
+      this.resource('answer');
   });
 });
 

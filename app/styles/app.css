@@ -1,7 +1,21 @@
+.navbar {
+  background-color: #2e2f32;
+}
+
+nav .active {
+  color: white;
+}
+
 body {
   padding-top: 70px;
+  background-color: #fa334f;
+  color: white;
 }
 
 .muted {
   opacity: 0.5;
+}
+
+.question {
+  color: white;
 }

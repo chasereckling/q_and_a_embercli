@@ -1,0 +1,12 @@
+<div class="new-question-form">
+  <h3>What Would you like to ask?</h3>
+
+  <br>
+
+    <p>{{input type="text" placeholder="Enter your name" value=name class="name-input"}}</p>
+    <p>{{input type="date" placeholder="date" value=date class="date-input"}}</p>
+    <p>{{input type="text" placeholder="What would you like to ask?" id="title" value=title class="title-input" size="35"}}</p>
+    <p>{{textarea type="text" placeholder="" id="body" value=body class="body-input" rows="6" cols="35"}}</p>
+
+    <button {{action 'addQuestion'}} class="btn btn-primary" >Add question</button>
+</div>

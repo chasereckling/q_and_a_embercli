@@ -1,9 +1,5 @@
-<h1>questions page lol</h1>
-
-{{outlet}}
-
 {{#each question in model}}
   <div class="each-question">
-    {{#link-to 'question' question.id}}{{question.title}}{{/link-to}} <span class="muted">by {{question.name}} {{question.date}}</span>
+    <h3 class="question">{{#link-to 'question' question.id}}{{question.title}}{{/link-to}} <span class="muted">by {{question.name}} {{question.date}}</span></h3>
   </div>
 {{/each}}

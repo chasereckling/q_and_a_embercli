@@ -1,7 +1,7 @@
 <div class="answer-form">
-    {{input type="text" placeholder="Your name" value=name class="name-input"}}
-    {{textarea type="text" placeholder="Your answer" id="body" value=body class="body-input" rows="4"}}
-    {{input type="date" placeholder="date" value=date class="date-input"}}
+    <p>{{input type="text" placeholder="Enter your name" value=name class="name-input" size="30"}}</p>
+    <p>{{input type="date" placeholder="date" value=date class="date-input"}}</p>
+    <p>{{textarea type="text" placeholder="Whats Your answer?" id="body" value=body class="body-input" cols="40" rows="4"}}</p>
 
-    <button {{action 'addAnswer'}} class="submit">Add answer</button>
+    <button {{action 'addAnswer'}} class="btn btn-success" data-dismiss="modal">Add answer</button>
 </div>
