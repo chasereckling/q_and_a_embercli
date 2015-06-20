@@ -2,10 +2,6 @@
   background-color: #2e2f32;
 }
 
-/*li .nav a:hover {
-  color: white;
-  }*/
-
 nav .active {
   font-weight: bold;
 }
