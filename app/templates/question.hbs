@@ -1,4 +1,4 @@
-<div class="question-page">
+<div class="white-text">
   <h1>{{model.title}}</h1>
 
   <h4><span class="muted">{{model.name}}, {{model.date}}</span>
@@ -23,7 +23,7 @@
     <button class="btn btn-primary" {{action 'save'}}>Save</button>
   </form>
 {{else}}
-  <div class="question-page">
+  <div class="white-text">
     <p>{{model.body}}</p>
   </div>
 
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-  <div class="question-page">
+  <div class="white-text">
     {{#each answer in model.answers}}
       <br>
       <ul>

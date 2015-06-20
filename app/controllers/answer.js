@@ -4,10 +4,11 @@ export default Ember.Controller.extend({
   needs: ['question'],
   actions: {
     addAnswer: function() {
+      var answerDate = new Date().toDateString();
       var newAnswer = this.store.createRecord('answer', {
         name: this.get('name'),
         body: this.get('body'),
-        date: this.get('date')
+        date: answerDate
       });
       var question = this.get('controllers.question.model');
       newAnswer.save().then(function(){
@@ -17,7 +18,6 @@ export default Ember.Controller.extend({
 
       this.setProperties({
         name: '',
-        date: '',
         body: ''
       });
 
