@@ -1,11 +1,10 @@
-<h1>{{model.title}}</h1>
+<div class="question-page">
+  <h1>{{model.title}}</h1>
 
-<h4><span class="muted">{{model.name}}, {{model.date}}</span>
-<span>
-<button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button>
-<button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
-</span>
-</h4>
+  <h4><span class="muted">{{model.name}}, {{model.date}}</span>
+    <span><button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button><button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button></span>
+  </h4>
+</div>
 
 {{#if isEditing}}
   <form>
@@ -24,8 +23,9 @@
     <button class="btn btn-primary" {{action 'save'}}>Save</button>
   </form>
 {{else}}
-
-<p>{{model.body}}</p>
+  <div class="question-page">
+    <p>{{model.body}}</p>
+  </div>
 
 {{/if}}
 
@@ -47,14 +47,15 @@
         <div class="modal-footer">
         </div>
       </div>
-
     </div>
   </div>
 
-  {{#each answer in model.answers}}
-  <br>
-    <ul>
-      <li>{{answer.body}}</li>
-      <span class="muted"> {{answer.name}}, {{answer.date}} </span>
-    </ul>
-  {{/each}}
+  <div class="question-page">
+    {{#each answer in model.answers}}
+      <br>
+      <ul>
+        <dt>{{answer.body}}</dt>
+        <span> <dd>{{answer.name}}, {{answer.date}}</dd> </span>
+      </ul>
+    {{/each}}
+  </div>

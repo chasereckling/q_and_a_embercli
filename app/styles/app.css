@@ -2,20 +2,32 @@
   background-color: #2e2f32;
 }
 
-nav .active {
+/*li .nav a:hover {
   color: white;
+  }*/
+
+nav .active {
+  font-weight: bold;
 }
 
 body {
   padding-top: 70px;
   background-color: #fa334f;
-  color: white;
 }
 
 .muted {
   opacity: 0.5;
 }
 
-.question {
+.question-page {
   color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #2e2f32;
+  opacity: 0.5;
 }
