@@ -1,8 +1,8 @@
 <div class="white-text">
   <h1>{{model.title}}</h1>
 
-  <h4><span class="muted">{{model.name}}, {{model.date}}</span>
-    <span><button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button><button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button></span>
+  <h4><span class="muted"> {{model.name}}, {{model.date}} </span>
+    <span><button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button> <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button></span>
   </h4>
 </div>
 
@@ -23,16 +23,15 @@
     <button class="btn btn-primary" {{action 'save'}}>Save</button>
   </form>
 {{else}}
-  <div class="white-text">
+  <div class="question-body">
     <p>{{model.body}}</p>
   </div>
 
 {{/if}}
 
-<br>
-
-  {{#link-to 'answer'}}<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Answer</button>{{/link-to}}
-
+  <div class="answer-button">
+    {{#link-to 'answer'}}<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" >Answer</button>{{/link-to}}
+  </div>
   <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 

@@ -19,11 +19,37 @@ body {
   color: white;
 }
 
-a {
+.question a {
   color: white;
 }
 
-a:hover {
+.question a:hover {
   color: #2e2f32;
   opacity: 0.5;
+}
+
+.question-body {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.modal-content {
+  background-color: #2e2f32;
+}
+
+.modal-title {
+  color: white;
+}
+
+.close {
+  color: white;
+}
+
+.close:hover {
+  color: white;
+}
+
+.answer-button {
+  padding-bottom: 30px;
 }
