@@ -6,6 +6,10 @@ nav .active {
   font-weight: bold;
 }
 
+.navbar-brand {
+  font-size: 35px;
+}
+
 #add-button {
   margin-right: 15px;
 }
