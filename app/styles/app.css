@@ -6,6 +6,10 @@ nav .active {
   font-weight: bold;
 }
 
+#add-button {
+  margin-right: 15px;
+}
+
 body {
   padding-top: 70px;
   background-color: #fa334f;
