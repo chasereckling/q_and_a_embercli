@@ -11,6 +11,10 @@ body {
   background-color: #fa334f;
 }
 
+.list-group a {
+text-decoration:none;
+}
+
 .muted {
   opacity: 0.5;
 }
