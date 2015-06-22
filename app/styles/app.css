@@ -1,3 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+@font-face {
+  font-family: 'Press Start 2P', cursive;
+  src: url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+}
+
 .navbar {
   background-color: #2e2f32;
 }
@@ -17,6 +24,7 @@ nav .active {
 body {
   padding-top: 70px;
   background-color: #fa334f;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .questions a {
@@ -25,8 +33,8 @@ text-decoration:none;
 
 .badge {
   padding-top: 8px;
-  width: 80px;
-  height: 40px;
+  width: 105px;
+  height: 53px;
 }
 
 .muted {

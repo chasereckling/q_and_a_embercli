@@ -2,7 +2,8 @@
 <div class="list-group questions">
   {{#link-to 'question' question.id}}
     <a href="#" class="list-group-item">
-      <h2 class="list-group-item-heading">{{question.title}}  <span class="muted"><small>  by {{question.name}}, {{question.date}}</small></span><span class="badge" style='float: right;'> Answers: <br> 5</span></h2>
+      <h2 class="list-group-item-heading">{{question.title}}<span class="badge" style='float: right;'> Answers <br> <br> 5</span></h2>
+      <span class="muted">  by {{question.name}}, {{question.date}}</span>
     </a>
   {{/link-to}}
 </div>
