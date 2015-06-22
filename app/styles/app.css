@@ -15,6 +15,7 @@ nav .active {
 
 .navbar-brand {
   font-size: 35px;
+  padding-top: 17px;
 }
 
 #searchBox {
