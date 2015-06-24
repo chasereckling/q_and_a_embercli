@@ -15,6 +15,7 @@ Setup:
 1. After you download Q & A navigate to the 'q_and_a_embercli' file folder in your terminal then run the following commands:
 
    $ npm install
+   
    $ bower install
    
 2. Next run the following command to start your server:
